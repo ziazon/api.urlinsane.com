@@ -1,0 +1,31 @@
+{
+  "name": "api.urlinsane.com",
+  "version": "1.0.0",
+  "description": "Node.js API server for urlinsane.com frontend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secint/api.urlinsane.com.git"
+  },
+  "author": "Jubair Saidi <jubair@cybersectech.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/secint/api.urlinsane.com/issues"
+  },
+  "homepage": "https://github.com/secint/api.urlinsane.com#readme",
+  "scripts": {
+    "serve": "tsc-watch ./src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\" --onFailure \"echo Beep! Compilation Failed\" --compiler typescript/bin/tsc"
+  },
+  "dependencies": {
+    "benchlogga": "0.0.5",
+    "socket.io": "^2.2.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@types/socket.io": "^2.1.2",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "tsc-watch": "^2.2.1"
+  }
+}
