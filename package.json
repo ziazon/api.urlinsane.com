@@ -13,7 +13,11 @@
   },
   "homepage": "https://github.com/secint/api.urlinsane.com#readme",
   "scripts": {
-    "serve": "tsc-watch ./src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\" --onFailure \"echo Beep! Compilation Failed\" --compiler typescript/bin/tsc"
+    "lint": "./node_modules/eslint/bin/eslint.js src/**/*",
+    "test": "echo 'No test specified'",
+    "serve": "tsc-watch ./src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\" --onFailure \"echo Beep! Compilation Failed\" --compiler typescript/bin/tsc",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "benchlogga": "0.0.5",
