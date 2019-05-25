@@ -1,3 +1,10 @@
+export interface Options {
+  domains: string[];
+  funcs: string[];
+  keyboards: string[];
+  typos: string[];
+}
+
 export default {
   domain: {
     label: "Domain",
